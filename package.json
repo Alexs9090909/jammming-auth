@@ -1,12 +1,18 @@
 {
   "name": "spotify-implicit-grant-example",
+  "homepage": "https://Alexs9090909.github.io/jammming-auth",
   "version": "0.0.2",
   "description": "Spotify Implicit Grant example",
   "author": "Spotify",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
   },
   "dependencies": {
     "express": "4.18.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }
